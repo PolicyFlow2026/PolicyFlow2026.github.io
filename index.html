@@ -148,7 +148,20 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Continuous-time flows provide highly expressive parameterizations for modeling
+            complex and multi-modal action distributions, but the reliance on ODE solvers
+            makes explicit likelihood evaluation computationally prohibitive. Proximal Policy
+            Optimization (PPO), in contrast, is simple, stable, and widely adopted in large-
+            scale parallel training, yet constrained by Gaussian parameterizations in most
+            cases. We propose Continuous-Time Flow Policy Optimization (CFPO), which
+            integrates the velocity field of continuous-time flows with PPO, avoiding explicit
+            flow density computation and retaining the stability of PPO updates. In addition,
+            we introduce an efficient Brownian entropy regularization that mitigates mode col-
+            lapse and maintains action diversity in multi-modal tasks. Experiments on stan-
+            dard continuous-control benchmarks demonstrate that CFPO matches or surpasses
+            PPO in performance, while capturing richer and more diverse behaviors. These re-
+            sults suggest that CFPO opens a promising direction for on-policy reinforcement
+            learning with continuous-time flows as a powerful policy representation.
           </p>
         </div>
       </div>
