@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Continuous-Time Flow Policy Optimization</title>
+  <title>ReFlow: Policy Optimization with Continuous Normalizing Flow in Reinforcement Learning</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,17 +52,17 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Continuous-Time Flow Policy Optimization</h1>
+            <h1 class="title is-1 publication-title">ReFlow: Policy Optimization with Continuous Normalizing Flow in Reinforcement Learning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous authors</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <!-- <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
                   <span class="author-block">
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
                   </span>
-                  </div> -->
+                  </div>
 
                   <!-- <div class="is-size-5 publication-authors">
                     <span class="author-block">Institution Name<br>Conferance name and year</span>
@@ -72,8 +72,8 @@
                     <span class="author-block">ICLR 2026</span>
                   </div>
 
-                  <div class="column has-text-centered">
-                    <!-- <div class="publication-links">
+                  <!-- <div class="column has-text-centered">
+                    <div class="publication-links">
                       <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -82,10 +82,9 @@
                         </span>
                         <span>Paper</span>
                       </a>
-                    </span> -->
+                    </span>
 
-                    <!-- Supplementary PDF link -->
-                    <!-- <span class="link-block">
+                    <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -93,9 +92,8 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span> -->
+                  </span>
 
-                  <!-- Github link -->
                   <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -106,18 +104,17 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
-                <!-- <span class="link-block">
+                <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
-                </a> -->
+                </a>
               </span>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -126,11 +123,10 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -139,7 +135,7 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -150,20 +146,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Continuous-time flows provide highly expressive parameterizations for modeling
-            complex and multi-modal action distributions, but the reliance on ODE solvers
-            makes explicit likelihood evaluation computationally prohibitive. Proximal Policy
-            Optimization (PPO), in contrast, is simple, stable, and widely adopted in large-
-            scale parallel training, yet constrained by Gaussian parameterizations in most
-            cases. We propose Continuous-Time Flow Policy Optimization (CFPO), which
-            integrates the velocity field of continuous-time flows with PPO, avoiding explicit
-            flow density computation and retaining the stability of PPO updates. In addition,
-            we introduce an efficient Brownian entropy regularization that mitigates mode col-
-            lapse and maintains action diversity in multi-modal tasks. Experiments on stan-
-            dard continuous-control benchmarks demonstrate that CFPO matches or surpasses
-            PPO in performance, while capturing richer and more diverse behaviors. These re-
-            sults suggest that CFPO opens a promising direction for on-policy reinforcement
-            learning with continuous-time flows as a powerful policy representation.
+            Proximal Policy Optimization (PPO) is a widely used on-policy reinforcement learning algorithm, valued for its simplicity, stability, and strong empirical performance. It optimizes policies via surrogate objectives based on importance ratios, which require likelihood evaluation. While Gaussian policies make this straightforward, replacing them with continuous normalizing flows (CNFs), which are represented via ordinary differential equations (ODEs), enhances expressiveness for multimodal actions but makes ratio evaluation challenging. Computing likelihoods along full flow paths demands costly simulation and backpropagation and is prone to exploding or vanishing gradients. We propose ReFlow, an on-policy algorithm that integrates CNFs as expressive policies with PPO-style objectives while avoiding likelihood evaluation along the full flow path. ReFlow approximates importance ratios using velocity field variations along a simple interpolation path, reducing computational overhead while preserving the stability of proximal updates, and further introduces an implicit entropy regularizer, inspired by Brownian motion, which is both conceptually elegant and computationally lightweight, effectively mitigating mode collapse and encouraging diverse behaviors. Experiments on MultiGoal, IsaacLab, and MuJoCo Playground show that ReFlow achieves competitive or superior performance compared to PPO with Gaussian policies and state-of-the-art flow-based method, with MultiGoal in particular demonstrating ReFlow’s ability to capture diverse multimodal action distributions.
           </p>
         </div>
       </div>
@@ -174,33 +157,29 @@
 
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
       <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -209,56 +188,51 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -266,7 +240,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -275,7 +249,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -285,21 +259,21 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
 
-  <footer class="footer">
+  <!-- <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
@@ -315,7 +289,7 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 <!-- Statcounter tracking code -->
   
