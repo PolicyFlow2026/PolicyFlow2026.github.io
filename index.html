@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>ReFlow: Policy Optimization with Continuous Normalizing Flow in Reinforcement Learning</title>
+  <title>PolicyFlow: Policy Optimization with Continuous Normalizing Flow in Reinforcement Learning</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">ReFlow: Policy Optimization with Continuous Normalizing Flow in Reinforcement Learning</h1>
+            <h1 class="title is-1 publication-title">PolicyFlow: Policy Optimization with Continuous Normalizing Flow in Reinforcement Learning</h1>
             <!-- <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous authors</a><sup>*</sup>,</span>
@@ -153,7 +153,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Proximal Policy Optimization (PPO) is a widely used on-policy reinforcement learning algorithm, valued for its simplicity, stability, and strong empirical performance. It optimizes policies via surrogate objectives based on importance ratios, which require likelihood evaluation. While Gaussian policies make this straightforward, replacing them with continuous normalizing flows (CNFs), which are represented via ordinary differential equations (ODEs), enhances expressiveness for multimodal actions but makes ratio evaluation challenging. Computing likelihoods along full flow paths demands costly simulation and backpropagation and is prone to exploding or vanishing gradients. We propose ReFlow, an on-policy algorithm that integrates CNFs as expressive policies with PPO-style objectives while avoiding likelihood evaluation along the full flow path. ReFlow approximates importance ratios using velocity field variations along a simple interpolation path, reducing computational overhead while preserving the stability of proximal updates, and further introduces an implicit entropy regularizer, inspired by Brownian motion, which is both conceptually elegant and computationally lightweight, effectively mitigating mode collapse and encouraging diverse behaviors. Experiments on MultiGoal, IsaacLab, and MuJoCo Playground show that ReFlow achieves competitive or superior performance compared to PPO with Gaussian policies and state-of-the-art flow-based method, with MultiGoal in particular demonstrating ReFlow’s ability to capture diverse multimodal action distributions.
+            Among various on-policy reinforcement learning algorithms, Proximal Policy Optimization (PPO) demonstrates its unparalleled simplicity, numerical stability, and empirical performance. It optimizes policies via surrogate objectives based on importance ratios, which require nontrivial likelihood evaluation. Although the Gaussian policy assumption simplifies the likelihood evaluation step, it could potentially restrain the performance of the resulting policy. Replacing Gaussian policies with continuous normalizing flows (CNFs) represented via ordinary differential equations (ODEs) enhances expressiveness for multi-modal actions but inevitably leading to much more challenging importance ratio evaluation. Conventional likelihoods computation with CNFs is typically conducted along full-flow paths, which demands costly simulation and back-propagation and is prone to exploding or vanishing gradients. To resolve this issue, we propose a novel on-policy CNF-based reinforcement learning algorithm, named PolicyFlow, which integrates expressive policies with PPO-style objectives while avoiding likelihood evaluation along the full flow path. PolicyFlow approximates importance ratios using velocity field variations along a simple interpolation path, reducing computational overhead while preserving the stability of proximal updates. To avoid potential mode collapse and further encourage diverse behaviors, PolicyFlow introduces an implicit entropy regularizer, inspired by Brownian motion, which is both conceptually elegant and computationally lightweight. Experiments on diverse tasks in vairous environments such as MultiGoal, IsaacLab, and MuJoCo Playground show that PolicyFlow achieves competitive or superior performance compared to PPO with Gaussian policies and state-of-the-art flow-based method, with MultiGoal in particular demonstrating PolicyFlow’s ability to capture diverse multimodal action distributions.
           </p>
         </div>
       </div>
