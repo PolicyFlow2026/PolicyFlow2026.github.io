@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
@@ -27,15 +28,13 @@
   <title>PolicyFlow: Policy Optimization with Continuous Normalizing Flow in Reinforcement Learning</title>
   <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link rel="icon" type="image/png" href="static/images/policyflow.png">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -45,15 +44,17 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+
 <body>
 
 
   <section class="hero">
     <div class="hero-body">
-      <div class="container is-max-desktop">
+      <div class="container" style="max-width: 1250px; margin: 0 auto;">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">PolicyFlow: Policy Optimization with Continuous Normalizing Flow in Reinforcement Learning</h1>
+            <h1 class="title is-1 publication-title">PolicyFlow: Policy Optimization with Continuous Normalizing Flow in
+              Reinforcement Learning</h1>
             <!-- <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous authors</a><sup>*</sup>,</span>
@@ -64,17 +65,17 @@
                   </span>
                   </div> -->
 
-                  <!-- <div class="is-size-5 publication-authors">
+            <!-- <div class="is-size-5 publication-authors">
                     <span class="author-block">Institution Name<br>Conferance name and year</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div> -->
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">ICLR 2026</span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">ICLR 2026</span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                      <!-- <span class="link-block">
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -84,7 +85,7 @@
                       </a>
                     </span> -->
 
-                    <!-- <span class="link-block">
+                <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -94,8 +95,8 @@
                     </a>
                   </span> -->
 
-                  <span class="link-block">
-                    <a href="https://github.com/PolicyFlow2026/PolicyFlow" target="_blank"
+                <span class="link-block">
+                  <a href="https://github.com/PolicyFlow2026/PolicyFlow" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -121,17 +122,17 @@
                   <span>arXiv</span>
                 </a>
               </span> -->
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- Teaser video-->
-<!-- <section class="hero teaser">
+  <!-- Teaser video-->
+  <!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
@@ -144,28 +145,110 @@
     </div>
   </div>
 </section> -->
-<!-- End teaser video -->
+  <!-- End teaser video -->
 
-<!-- Paper abstract -->
+  <!-- Paper abstract -->
 <section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Among various on-policy reinforcement learning algorithms, Proximal Policy Optimization (PPO) demonstrates its unparalleled simplicity, numerical stability, and empirical performance. It optimizes policies via surrogate objectives based on importance ratios, which require nontrivial likelihood evaluation. Although the Gaussian policy assumption simplifies the likelihood evaluation step, it could potentially restrain the performance of the resulting policy. Replacing Gaussian policies with continuous normalizing flows (CNFs) represented via ordinary differential equations (ODEs) enhances expressiveness for multi-modal actions but inevitably leading to much more challenging importance ratio evaluation. Conventional likelihoods computation with CNFs is typically conducted along full-flow paths, which demands costly simulation and back-propagation and is prone to exploding or vanishing gradients. To resolve this issue, we propose a novel on-policy CNF-based reinforcement learning algorithm, named PolicyFlow, which integrates expressive policies with PPO-style objectives while avoiding likelihood evaluation along the full flow path. PolicyFlow approximates importance ratios using velocity field variations along a simple interpolation path, reducing computational overhead while preserving the stability of proximal updates. To avoid potential mode collapse and further encourage diverse behaviors, PolicyFlow introduces an implicit entropy regularizer, inspired by Brownian motion, which is both conceptually elegant and computationally lightweight. Experiments on diverse tasks in vairous environments such as MultiGoal, IsaacLab, and MuJoCo Playground show that PolicyFlow achieves competitive or superior performance compared to PPO with Gaussian policies and state-of-the-art flow-based method, with MultiGoal in particular demonstrating PolicyFlow’s ability to capture diverse multimodal action distributions.
-          </p>
-        </div>
-      </div>
+  <div class="container" style="max-width: 1000px; margin: 0 auto;">
+    <h2 class="title is-3 has-text-left">Abstract</h2>
+
+    <div class="content has-text-justified">
+      <!-- 左下角浮动图片 -->
+      <img src="static/images/vel_dir.png" alt="Abstract Figure"
+           style="float: right; width: 45%; max-width: 400px; height: auto; margin: 0 1rem 1rem 0;">
+
+      <p>
+        Among various on-policy reinforcement learning algorithms, Proximal Policy Optimization (PPO) demonstrates
+        its unparalleled simplicity, numerical stability, and empirical performance. It optimizes policies via
+        surrogate objectives based on importance ratios, which require nontrivial likelihood evaluation. Although
+        the Gaussian policy assumption simplifies the likelihood evaluation step, it could potentially restrain
+        the performance of the resulting policy. Replacing Gaussian policies with continuous normalizing flows
+        (CNFs) represented via ordinary differential equations (ODEs) enhances expressiveness for multi-modal
+        actions but inevitably leading to much more challenging importance ratio evaluation. Conventional
+        likelihoods computation with CNFs is typically conducted along full-flow paths, which demands costly
+        simulation and back-propagation and is prone to exploding or vanishing gradients. To resolve this issue,
+        we propose a novel on-policy CNF-based reinforcement learning algorithm, named PolicyFlow, which
+        integrates expressive policies with PPO-style objectives while avoiding likelihood evaluation along the
+        full flow path. PolicyFlow approximates importance ratios using velocity field variations along a simple
+        interpolation path, reducing computational overhead while preserving the stability of proximal updates. To
+        avoid potential mode collapse and further encourage diverse behaviors, PolicyFlow introduces an implicit
+        entropy regularizer, inspired by Brownian motion, which is both conceptually elegant and computationally
+        lightweight. Experiments on diverse tasks in vairous environments such as MultiGoal, IsaacLab, and MuJoCo
+        Playground show that PolicyFlow achieves competitive or superior performance compared to PPO with Gaussian
+        policies and state-of-the-art flow-based method, with MultiGoal in particular demonstrating PolicyFlow’s
+        ability to capture diverse multimodal action distributions.
+      </p>
     </div>
   </div>
 </section>
-<!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<!-- <section class="hero is-small">
+
+
+
+
+  <section class="hero is-small is-light" style="padding: 3rem 0;">
+    <div class="container" style="max-width: 1000px; margin: 0 auto;">
+      <h2 class="title is-3 has-text-left">IsaacLab Environments</h2>
+
+      <div class="columns">
+        <div class="column">
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="static/videos/Isaac-Lift-Cube-Franka-PF_policyflow/rl-video-step-4096.mp4" type="video/mp4">
+          </video>
+          <h3 class="title is-5 has-text-centered">Lift Cube (Franka)</h3>
+        </div>
+
+        <div class="column">
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="static/videos/Isaac-Navigation-Flat-Anymal-C-PF_policyflow/rl-video-step-0.mp4"
+              type="video/mp4">
+          </video>
+          <h3 class="title is-5 has-text-centered">Navigation (Anymal-C)</h3>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="static/videos/Isaac-Velocity-Rough-Unitree-Go2-PF_policyflow/rl-video-step-0.mp4"
+              type="video/mp4">
+          </video>
+          <h3 class="title is-5 has-text-centered">Velocity Tracking (Go2)</h3>
+        </div>
+
+        <div class="column">
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="static/videos/Isaac-Velocity-Rough-H1-PF_policyflow/rl-video-step-0.mp4" type="video/mp4">
+          </video>
+          <h3 class="title is-5 has-text-centered">Velocity Tracking (H1)</h3>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="static/videos/Isaac-Velocity-Rough-G1-PF_policyflow/rl-video-step-0.mp4" type="video/mp4">
+          </video>
+          <h3 class="title is-5 has-text-centered">Velocity Tracking (G1)</h3>
+        </div>
+
+        <div class="column">
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="static/videos/Isaac-Open-Drawer-Franka-PF_policyflow/rl-video-step-0.mp4" type="video/mp4">
+          </video>
+          <h3 class="title is-5 has-text-centered">Open Drawer (Franka)</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- End paper abstract -->
+
+
+  <!-- Image carousel -->
+  <!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
@@ -197,13 +280,70 @@
 </div>
 </div>
 </section> -->
-<!-- End image carousel -->
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container">
+
+        <!-- 第一组图片+文字 -->
+        <div class="item" style="margin-bottom: 2rem; text-align: center;">
+          <img src="static/images/pointmaze.png" alt="First image"
+            style="width: 100%; max-width: 800px; height: auto; display: block; margin: 0 auto;" />
+          <p style="text-align: justify; max-width: 1000px; margin: 0.5rem auto 0 auto;">
+            (PointMaze-Medium-Diverse-GDense-v3) Exploration Density Maps.
+            (a) Environment overview: the agent is initialized at the green point for each episode, and the four red
+            points indicate goal locations with equal rewards.
+            (b) Exploration heatmap of PPO, showing limited coverage due to the simple Gaussian policy.
+            (c) Exploration heatmap of PolicyFlow without the Brownian regularizer, which improves coverage but still
+            leaves some regions under-explored.
+            (d) Exploration heatmap of PolicyFlow with the Brownian regularizer, achieving near-complete coverage of all
+            feasible locations.
+          </p>
+        </div>
+
+        <!-- 第二组图片+文字 -->
+        <div class="item" style="margin-bottom: 2rem; text-align: center;">
+          <img src="static/images/multigoal.png" alt="MultiGoal Test"
+            style="width: 100%; max-width: 800px; height: auto; display: block; margin: 0 auto;" />
+          <p style="text-align: justify; max-width: 1000px; margin: 0.5rem auto 0 auto; line-height: 1.5;">
+            MultiGoal Test: sample 1000 trajectories starting at the same
+            original point.
+            (a) PPO with Gaussian entropy regularization (w<sub>g</sub>=0.001)
+            covers only a limited set of goals.
+            (b,c) DPPO and FPO collapse to a small number of modes, likely because
+            neither method incorporates any form of entropy regularization.
+            (d) PolicyFlow with uniform noise injection (weight 0.05) still suffers
+            from mode collapse, concentrating on only a few modes.
+            (e) PolicyFlow with only Gaussian entropy regularization
+            (w<sub>g</sub>=0.001) partially alleviates mode collapse.
+            (f) PolicyFlow with the proposed Brownian regularizer
+            (w<sub>b</sub>=0.25) and Gaussian entropy regularization (w<sub>g</sub>=0.001) achieves the most diverse and
+            more balanced goal-reaching behaviors.
+          </p>
+        </div>
+
+        <div class="item" style="margin-bottom: 2rem; text-align: center;">
+          <img src="static/images/mp_res.jpg" alt="MultiGoal Test"
+            style="width: 100%; max-width: 900px; height: auto; display: block; margin: 0 auto;" />
+          <p style="text-align: justify; max-width: 1000px; margin: 0.5rem auto 0 auto; line-height: 1.5;">
+            Learning curves on MuJoCo Playground benchmarks. Plots show mean episodic reward with standard error
+            (y-axis) over environment steps (x-axis, total 60M steps), averaged over 5 random seeds.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- End image carousel -->
 
 
 
 
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
+  <!-- Youtube video -->
+  <!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Video Presentation</h2>
@@ -218,68 +358,71 @@
     </div>
   </div>
 </section> -->
-<!-- End youtube video -->
+  <!-- End youtube video -->
 
 
+  <!-- 
 
-<section class="hero is-small is-light">
-  <div class="container">
-    <h2 class="title is-3">IsaacLab Benchmarks</h2>
+  <section class="hero is-small is-light">
+    <div class="container">
+      <h2 class="title is-3">IsaacLab Benchmarks</h2>
 
-    <div class="columns">
-      <div class="column is-one-secoond">
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="static/videos/Isaac-Lift-Cube-Franka-PF_policyflow/rl-video-step-4096.mp4" type="video/mp4">
-        </video>
-        <h3 class="title is-5 has-text-centered">Lift Cube (Franka)</h3>
+      <div class="columns">
+        <div class="column is-one-secoond">
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="static/videos/Isaac-Lift-Cube-Franka-PF_policyflow/rl-video-step-4096.mp4" type="video/mp4">
+          </video>
+          <h3 class="title is-5 has-text-centered">Lift Cube (Franka)</h3>
+        </div>
+
+        <div class="column is-one-secoond">
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="static/videos/Isaac-Navigation-Flat-Anymal-C-PF_policyflow/rl-video-step-0.mp4"
+              type="video/mp4">
+          </video>
+          <h3 class="title is-5 has-text-centered">Navigation (Anymal-C)</h3>
+        </div>
       </div>
 
-      <div class="column is-one-secoond">
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="static/videos/Isaac-Navigation-Flat-Anymal-C-PF_policyflow/rl-video-step-0.mp4" type="video/mp4">
-        </video>
-        <h3 class="title is-5 has-text-centered">Navigation (Anymal-C)</h3>
+      <div class="columns">
+        <div class="column is-one-secoond">
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="static/videos/Isaac-Velocity-Rough-Unitree-Go2-PF_policyflow/rl-video-step-0.mp4"
+              type="video/mp4">
+          </video>
+          <h3 class="title is-5 has-text-centered">Velocity Tracking (Go2)</h3>
+        </div>
+
+        <div class="column is-one-secoond">
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="static/videos/Isaac-Velocity-Rough-H1-PF_policyflow/rl-video-step-0.mp4" type="video/mp4">
+          </video>
+          <h3 class="title is-5 has-text-centered">Velocity Tracking (H1) </h3>
+        </div>
+
       </div>
+
+      <div class="columns">
+        <div class="column is-one-secoond">
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="static/videos/Isaac-Velocity-Rough-G1-PF_policyflow/rl-video-step-0.mp4" type="video/mp4">
+          </video>
+          <h3 class="title is-5 has-text-centered">Velocity Tracking (G1) </h3>
+        </div>
+
+        <div class="column is-one-secoond">
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="static/videos/Isaac-Open-Drawer-Franka-PF_policyflow/rl-video-step-0.mp4" type="video/mp4">
+          </video>
+          <h3 class="title is-5 has-text-centered">Open Drawer (Franka) </h3>
+        </div>
+      </div>
+
     </div>
+  </section> -->
 
-    <div class="columns">
-      <div class="column is-one-secoond">
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="static/videos/Isaac-Velocity-Rough-Unitree-Go2-PF_policyflow/rl-video-step-0.mp4" type="video/mp4">
-        </video>
-        <h3 class="title is-5 has-text-centered">Velocity Tracking (Go2)</h3>
-      </div>
-
-      <div class="column is-one-secoond">
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="static/videos/Isaac-Velocity-Rough-H1-PF_policyflow/rl-video-step-0.mp4" type="video/mp4">
-        </video>
-        <h3 class="title is-5 has-text-centered">Velocity Tracking (H1) </h3>
-      </div>
-
-    </div>
-
-    <div class="columns">
-      <div class="column is-one-secoond">
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="static/videos/Isaac-Velocity-Rough-G1-PF_policyflow/rl-video-step-0.mp4" type="video/mp4">
-        </video>
-        <h3 class="title is-5 has-text-centered">Velocity Tracking (G1) </h3>
-      </div>
-
-      <div class="column is-one-secoond">
-        <video autoplay controls muted loop playsinline width="100%">
-          <source src="static/videos/Isaac-Open-Drawer-Franka-PF_policyflow/rl-video-step-0.mp4" type="video/mp4">
-        </video>
-        <h3 class="title is-5 has-text-centered">Open Drawer (Franka) </h3>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
+  <!-- Video carousel -->
+  <!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
@@ -306,15 +449,15 @@
     </div>
   </div>
 </section> -->
-<!-- End video carousel -->
+  <!-- End video carousel -->
 
 
 
 
 
 
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
+  <!-- Paper poster -->
+  <!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -325,17 +468,17 @@
       </div>
     </div>
   </section> -->
-<!--End paper poster -->
+  <!--End paper poster -->
 
 
-<!--BibTex citation -->
+  <!--BibTex citation -->
   <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
 </section> -->
-<!--End BibTex citation -->
+  <!--End BibTex citation -->
 
 
   <!-- <footer class="footer">
@@ -356,11 +499,12 @@
   </div>
 </footer> -->
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <!-- Statcounter tracking code -->
 
-    <!-- End of Statcounter Code -->
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-  </body>
-  </html>
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
